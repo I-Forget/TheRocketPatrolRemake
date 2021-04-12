@@ -1,6 +1,6 @@
 //console.log('accessing menu.js'); finally got it to show needed to add config into the phaser thing
 class Menu extends Phaser.Scene {
-    
+    // it is done
     constructor() {
         super("menuScene");
         //console.log('menu scene cuper called');
