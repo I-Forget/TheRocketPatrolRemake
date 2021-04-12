@@ -22,7 +22,28 @@ class Play extends Phaser.Scene {
             game.config.width/2, 
             game.config.height - borderUISize - borderPadding, 'rocket').setOrigin(0.5, 0); //was missing the origin in order for it to show up.Smith didn't have it but it showed up?? 
 
-        // Green rectangle thing
+        this.ship1 = new Ship(
+            this,
+            100,
+            200,
+            'spaceship' 
+        );
+
+        this.ship2 = new Ship(
+            this,
+            300,
+            240,
+            'spaceship' 
+        );
+
+        this.ship3 = new Ship(
+            this,
+            380,
+            300,
+            'spaceship' 
+        );
+        
+            // Green rectangle thing
         this.add.rectangle(
             0, 
             borderUISize + borderPadding,
