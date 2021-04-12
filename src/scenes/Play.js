@@ -18,6 +18,10 @@ class Play extends Phaser.Scene {
         //star field stuff.
         this.starfield = this.add.tileSprite(0,0,640,480, 'starfield').setOrigin(0,0);
         
+        this.p1Rocket = new Rocket(this, 
+            game.config.width/2, 
+            game.config.height - borderUISize - borderPadding, 'rocket').setOrigin(0.5, 0); //was missing the origin in order for it to show up.Smith didn't have it but it showed up?? 
+
         // Green rectangle thing
         this.add.rectangle(
             0, 
