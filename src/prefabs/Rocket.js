@@ -4,4 +4,10 @@ class Rocket extends Phaser.GameObjects.Sprite {
         scene.add.existing(this);
 
     }
+
+    //update() {
+      //  if(keyLEFT.isDown){
+        //    this.x -= 2;
+        //}
+    //}
 }
